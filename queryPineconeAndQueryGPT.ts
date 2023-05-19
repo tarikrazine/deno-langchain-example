@@ -41,6 +41,7 @@ export const queryPineconeVectorStoreAndQueryLLM = async (
   if (queryResponse.matches && queryResponse.matches.length) {
     // 7. Log the number of matches
     console.log(`Found ${queryResponse.matches.length} matches...`);
+
     // 8. Log the question being asked
     console.log(`Asking question: ${question}...`);
 
